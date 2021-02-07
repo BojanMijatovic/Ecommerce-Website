@@ -55,9 +55,9 @@ button {
       width: 100%;
       overflow: hidden;
       transition: all 0.5s ease-in-out; }
-      .header .navbar__collapse .nav__item {
+      .header .navbar__collapse .__nav .nav__item {
         margin: 0.7rem 0; }
-        .header .navbar__collapse .nav__item .__link {
+        .header .navbar__collapse .__nav .nav__item .__link {
           color: #cc876e; }
     .header .navbar__toggler {
       z-index: 100;

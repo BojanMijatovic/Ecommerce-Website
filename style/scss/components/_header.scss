@@ -29,10 +29,13 @@
             width: 100%;
             overflow: hidden;
             transition: $transition;
-            .nav__item {
-                margin: 0.7rem 0;
-                .__link {
-                    color: $brown-color;
+            // __nav
+            .__nav {
+                .nav__item {
+                    margin: 0.7rem 0;
+                    .__link {
+                        color: $brown-color;
+                    }
                 }
             }
         }
