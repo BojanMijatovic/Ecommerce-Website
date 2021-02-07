@@ -1,0 +1,16 @@
+.button {
+    &__trans {
+        background-color: transparent;
+        color: $white-color;
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        font-weight: 200;
+        padding: 0.8rem 2.2rem;
+        border: 1px solid $white-color;
+        transition: $transition;
+        &:hover {
+            background-color: $emperor-color;
+            border-color: $emperor-color;
+        }
+    }
+}

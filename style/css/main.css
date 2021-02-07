@@ -1,3 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.5;
+  position: relative; }
+
 html {
-  font-family: 'Overpass', sans-serif; }
+  font-family: 'Overpass', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+li {
+  list-style-type: none; }
+
+img {
+  width: 100%;
+  display: block; }
+
+button {
+  outline: none;
+  cursor: pointer; }
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/header-banner.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch; }
+  .header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ffffff; }
+    .header .navbar__brand {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #ffffff; }
+    .header .navbar__collapse {
+      z-index: 99;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #000000;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out; }
+      .header .navbar__collapse .nav__item {
+        margin: 0.7rem 0; }
+        .header .navbar__collapse .nav__item .__link {
+          color: #cc876e; }
+    .header .navbar__toggler {
+      z-index: 100;
+      padding: 0.2rem 0.4rem;
+      font-size: 2rem;
+      border: none;
+      background: none;
+      color: #ffffff;
+      transition: all 0.5s ease-in-out; }
+      .header .navbar__toggler:hover {
+        color: #cc876e; }
+    .header .navbar .navbar__extra-content .nav-buttons {
+      display: none; }
+    .header .navbar .navbar__extra-content .nav-icons {
+      display: none; }
+
+.container {
+  width: 90vw;
+  margin: 0 auto; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.button__trans {
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 200;
+  padding: 0.8rem 2.2rem;
+  border: 1px solid #ffffff;
+  transition: all 0.5s ease-in-out; }
+  .button__trans:hover {
+    background-color: #534a4b;
+    border-color: #534a4b; }
