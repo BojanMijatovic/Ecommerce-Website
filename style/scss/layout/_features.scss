@@ -1,0 +1,42 @@
+.features {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/background-img-1.png') center/cover no-repeat fixed;
+    .features-wrapper {
+        // responsive
+        @include media-medium-1 {
+            padding: 5rem 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: none;
+            //  :nth-last-child(odd) {
+            //     border-right: 0.5px solid $gray-color;
+            // }
+        }
+        @include media-large {
+            height: 80rem;
+        }
+        // single item
+        .feature__item {
+            padding: 2.5rem;
+            border-bottom: 0.5px solid $gray-color;
+            // responsive
+            // @include media-medium-1 {
+            //     border: none;
+            //      :nth-last-child(odd) {
+            //         border-right: 0.5px solid $gray-color;
+            //     }
+            // }
+            // icon
+            &__icon {
+                color: $white-color;
+                font-size: 2.4rem;
+            }
+            // title
+            &__title {
+                color: $white-color;
+                text-transform: capitalize;
+                margin: 0.8rem 0;
+                font-weight: 300;
+            }
+        }
+    }
+}

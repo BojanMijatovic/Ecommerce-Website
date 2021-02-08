@@ -37,6 +37,13 @@ button {
 /* Medium devices (landscape tablets, 992px and up) */
 /* Large devices (laptops/desktops, 1200px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.text {
+  margin: 0.6rem 0;
+  font-weight: 200;
+  word-spacing: 2px;
+  color: #ffffff;
+  font-size: 1.6rem; }
+
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/header-banner.jpg") center/cover no-repeat;
@@ -205,6 +212,29 @@ button {
       @media screen and (min-width: 500px) {
         .header .header-banner__title {
           font-size: 4rem; } }
+
+.features {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/background-img-1.png") center/cover no-repeat fixed; }
+  @media only screen and (min-width: 768px) {
+    .features .features-wrapper {
+      padding: 5rem 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: none; } }
+  @media only screen and (min-width: 1200px) {
+    .features .features-wrapper {
+      height: 80rem; } }
+  .features .features-wrapper .feature__item {
+    padding: 2.5rem;
+    border-bottom: 0.5px solid #e0e0e0e0; }
+    .features .features-wrapper .feature__item__icon {
+      color: #ffffff;
+      font-size: 2.4rem; }
+    .features .features-wrapper .feature__item__title {
+      color: #ffffff;
+      text-transform: capitalize;
+      margin: 0.8rem 0;
+      font-weight: 300; }
 
 .container {
   width: 90vw;
