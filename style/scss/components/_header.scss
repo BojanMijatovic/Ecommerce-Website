@@ -17,6 +17,13 @@
             font-size: 1.8rem;
             font-weight: 800;
             color: $white-color;
+            //  responsive
+            @include media-sm {
+                font-size: 2rem;
+            }
+            @include media-medium-2 {
+                flex: 0 0 20rem;
+            }
         }
         // collapse
         &__collapse {
@@ -26,15 +33,52 @@
             right: 0;
             background-color: $black-color;
             height: 100%;
-            width: 100%;
+            width: 0;
             overflow: hidden;
             transition: $transition;
+            //  responsive
+            @include media-medium-2 {
+                position: relative;
+                width: 100%;
+                background: transparent;
+                flex: 0 0 40%;
+            }
             // __nav
             .__nav {
+                margin-top: 10rem !important;
+                width: 90vw;
+                margin: 0 auto;
+                //  responsive
+                @include media-medium-2 {
+                    display: flex;
+                    margin: 0 !important;
+                }
                 .nav__item {
                     margin: 0.7rem 0;
+                    padding: 1rem 0;
+                    text-align: center;
+                    //  responsive
+                    @include media-medium-2 {
+                        padding: 0;
+                        margin: 0 0.8rem;
+                    }
                     .__link {
                         color: $brown-color;
+                        text-transform: uppercase;
+                        font-size: 1.6rem;
+                        letter-spacing: 0.4rem;
+                        transition: $transition;
+                        //  responsive
+                        @include media-medium-2 {
+                            font-size: 1.6rem;
+                            letter-spacing: normal;
+                            text-transform: capitalize;
+                            color: $white-color;
+                        }
+                        &:hover {
+                            text-shadow: 0, 0, 4px $white-color;
+                            color: $brown-color;
+                        }
                     }
                 }
             }
@@ -48,17 +92,127 @@
             background: none;
             color: $white-color;
             transition: $transition;
+            // responsive
+            @include media-medium-2 {
+                display: none;
+            }
             &:hover {
                 color: $brown-color;
             }
         }
         // navbar__extra-content
         .navbar__extra-content {
+            // responsive
+            @include media-medium-2 {
+                flex: 1 0 30%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 1rem 0;
+            }
             .nav-buttons {
                 display: none;
+                // responsive
+                @include media-medium-2 {
+                    display: flex;
+                }
+                .button__extra__content {
+                    display: inline-block;
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                    opacity: 0.9;
+                    padding: 0.4rem 0;
+                    border-width: 0.5px;
+                    border-style: solid;
+                    margin: 0 0.5rem;
+                    width: 10rem;
+                    transition: $transition;
+                    &:first-child {
+                        border-color: $emperor-color;
+                        background: $emperor-color;
+                        color: $white-color;
+                        &:hover {
+                            border-color: $white-color;
+                            background: transparent;
+                        }
+                    }
+                    &:last-child {
+                        border-color: $white-color;
+                        background: transparent;
+                        color: $white-color;
+                        &:hover {
+                            border-color: $emperor-color;
+                            background: $emperor-color;
+                        }
+                    }
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
             }
             .nav-icons {
                 display: none;
+                // responsive
+                @include media-sm {
+                    display: flex;
+                }
+                span {
+                    color: $white-color;
+                    font-size: 2rem;
+                    padding: 0.5rem 1.5rem;
+                    cursor: pointer;
+                    transition: $transition;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .showNav {
+            width: 100%;
+        }
+    }
+    // header-banner
+    .header-banner {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $white-color;
+        opacity: 0.95;
+        text-align: center;
+        // responsive
+        @include media-sm {
+            text-align: left;
+        }
+        // box
+        &__box {
+            // responsive
+            @include media-medium-2 {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+        // subtitle
+        &__subtitle {
+            font-weight: 200;
+            font-size: 2.2rem;
+            // responsive
+            @include media-sm {
+                font-size: 1.5rem;
+            }
+        }
+        // title
+        &__title {
+            font-size: 2.8rem;
+            text-transform: capitalize;
+            line-height: 1.3;
+            letter-spacing: 1px;
+            margin: 1.5rem 0;
+            // responsive
+            @include media-sm {
+                font-size: 4rem;
             }
         }
     }
