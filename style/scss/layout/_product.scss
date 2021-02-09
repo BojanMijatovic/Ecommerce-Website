@@ -1,0 +1,74 @@
+.product {
+    padding: 5rem 0;
+    .product-wrapper {
+        .product__title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .product__item-wrapper {
+            // responsive
+            @include media-medium-1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 6rem;
+            }
+            .product__item {
+                border-radius: 1.6rem;
+                margin: 5rem 0;
+                padding: 1.5rem 0;
+                text-align: center;
+                position: relative;
+                transition: $transition;
+                &:hover {
+                    background: $white-smoke-color;
+                }
+                &:first-of-type {
+                    margin-top: 2rem;
+                }
+                &:last-of-type {
+                    margin-bottom: 2rem;
+                    // responsive
+                    @include media-medium-1 {
+                        margin-top: 2rem;
+                    }
+                }
+                // img
+                &__img {
+                    width: 16rem;
+                    margin: 0 auto;
+                    // responsive
+                    @include media-sm {
+                        width: 20rem;
+                    }
+                }
+                // info
+                &__info {
+                    padding: 2rem;
+                }
+                // title
+                .title {
+                    font-size: 1.8rem;
+                    font-weight: 800;
+                }
+                // ratings
+                .ratings span {
+                    color: $emperor-color;
+                }
+                // text
+                .text {
+                    color: $emperor-color;
+                    font-weight: 400;
+                    width: 90%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    // responsive
+                    @include media-sm {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}

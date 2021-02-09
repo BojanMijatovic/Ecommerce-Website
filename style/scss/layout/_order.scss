@@ -1,0 +1,40 @@
+.order {
+    padding: 5rem 0;
+    background-color: $emperor-color;
+    .order-wrapper {
+        // responsive
+        @include media-medium-1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.8rem;
+            align-items: center;
+        }
+        // img
+        .order__img img {
+            width: 70%;
+            margin: 0 auto;
+        }
+        // content
+        .order__content {
+            padding: 1.5rem 0;
+            text-align: center;
+            // responsive
+            @include media-medium-1 {
+                text-align: left;
+            }
+            // title
+            &__title {
+                text-transform: capitalize;
+                font-size: 3rem;
+                line-height: 1.3;
+            }
+            .button__trans {
+                margin-top: 1.5rem;
+                &:hover {
+                    background-color: $white-color;
+                    color: $emperor-color;
+                }
+            }
+        }
+    }
+}

@@ -222,7 +222,7 @@ button {
       grid-template-columns: repeat(2, 1fr); } }
   @media only screen and (min-width: 1200px) {
     .features .features-wrapper {
-      height: 80rem;
+      height: 60rem;
       grid-template-columns: repeat(4, 1fr); } }
   .features .features-wrapper .feature__item {
     padding: 2.5rem;
@@ -247,6 +247,85 @@ button {
       margin: 0.8rem 0;
       font-weight: 300; }
 
+.product {
+  padding: 5rem 0; }
+  .product .product-wrapper .product__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase; }
+  @media only screen and (min-width: 768px) {
+    .product .product-wrapper .product__item-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 6rem; } }
+  .product .product-wrapper .product__item-wrapper .product__item {
+    border-radius: 1.6rem;
+    margin: 5rem 0;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: relative;
+    transition: all 0.5s ease-in-out; }
+    .product .product-wrapper .product__item-wrapper .product__item:hover {
+      background: #f1f1f1; }
+    .product .product-wrapper .product__item-wrapper .product__item:first-of-type {
+      margin-top: 2rem; }
+    .product .product-wrapper .product__item-wrapper .product__item:last-of-type {
+      margin-bottom: 2rem; }
+      @media only screen and (min-width: 768px) {
+        .product .product-wrapper .product__item-wrapper .product__item:last-of-type {
+          margin-top: 2rem; } }
+    .product .product-wrapper .product__item-wrapper .product__item__img {
+      width: 16rem;
+      margin: 0 auto; }
+      @media screen and (min-width: 500px) {
+        .product .product-wrapper .product__item-wrapper .product__item__img {
+          width: 20rem; } }
+    .product .product-wrapper .product__item-wrapper .product__item__info {
+      padding: 2rem; }
+    .product .product-wrapper .product__item-wrapper .product__item .title {
+      font-size: 1.8rem;
+      font-weight: 800; }
+    .product .product-wrapper .product__item-wrapper .product__item .ratings span {
+      color: #534a4b; }
+    .product .product-wrapper .product__item-wrapper .product__item .text {
+      color: #534a4b;
+      font-weight: 400;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto; }
+      @media screen and (min-width: 500px) {
+        .product .product-wrapper .product__item-wrapper .product__item .text {
+          width: 60%; } }
+
+.order {
+  padding: 5rem 0;
+  background-color: #534a4b; }
+  @media only screen and (min-width: 768px) {
+    .order .order-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1.8rem;
+      align-items: center; } }
+  .order .order-wrapper .order__img img {
+    width: 70%;
+    margin: 0 auto; }
+  .order .order-wrapper .order__content {
+    padding: 1.5rem 0;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .order .order-wrapper .order__content {
+        text-align: left; } }
+    .order .order-wrapper .order__content__title {
+      text-transform: capitalize;
+      font-size: 3rem;
+      line-height: 1.3; }
+    .order .order-wrapper .order__content .button__trans {
+      margin-top: 1.5rem; }
+      .order .order-wrapper .order__content .button__trans:hover {
+        background-color: #ffffff;
+        color: #534a4b; }
+
 .container {
   width: 90vw;
   margin: 0 auto; }
@@ -268,3 +347,30 @@ button {
   .button__trans:hover {
     background-color: #534a4b;
     border-color: #534a4b; }
+.button__product {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 1.6rem;
+  border: none;
+  background-color: #cc876e;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out; }
+  .button__product:hover {
+    opacity: 0.8; }
+  .button__product-add {
+    border-radius: 1.6rem;
+    border: none;
+    padding: 1rem 2rem;
+    background: #534a4b;
+    font-size: 1.6rem;
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 70%);
+    transition: all 0.5s ease-in-out; }
+    .button__product-add:hover {
+      background-color: #000000; }
