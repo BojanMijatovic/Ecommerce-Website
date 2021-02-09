@@ -6,25 +6,31 @@
             padding: 5rem 0;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            border: none;
-            //  :nth-last-child(odd) {
-            //     border-right: 0.5px solid $gray-color;
-            // }
         }
         @include media-large {
             height: 80rem;
+            grid-template-columns: repeat(4, 1fr);
         }
         // single item
         .feature__item {
             padding: 2.5rem;
             border-bottom: 0.5px solid $gray-color;
             // responsive
-            // @include media-medium-1 {
-            //     border: none;
-            //      :nth-last-child(odd) {
-            //         border-right: 0.5px solid $gray-color;
-            //     }
-            // }
+            @include media-medium-1 {
+                border: none;
+                &:nth-child(odd) {
+                    border-right: 0.5px solid $gray-color;
+                }
+            }
+            @include media-large {
+                &:nth-child(2) {
+                    border-right: 0.5px solid $gray-color;
+                }
+                &:nth-child(odd) .feature__item__icon {
+                    display: block;
+                    margin-top: 12rem;
+                }
+            }
             // icon
             &__icon {
                 color: $white-color;
