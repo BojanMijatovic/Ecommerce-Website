@@ -16,7 +16,6 @@ toggleBtn.addEventListener('click', function() {
 
 
 // resize animation stopper
-
 let resizeTimer;
 window.addEventListener('resize', function() {
     document.body.classList.add('resize-animation-stopper');
@@ -24,4 +23,44 @@ window.addEventListener('resize', function() {
     resizeTimer = setTimeout(() => {
         document.body.classList.remove('resize-animation-stopper');
     }, 400);
+})
+
+
+
+// reviews
+const prevBtn = document.querySelector('.button__reviews-prev');
+const nextBtn = document.querySelector('.button__reviews-next');
+let idCount = 0;
+const reviewSlide = document.querySelectorAll('.reviews__item');
+
+function showCurrentSlide(id) {
+    hideAllSlides();
+    reviewSlide.forEach((item, ids) => {
+        if (id == ids) {
+            item.classList.add('activeSlide')
+        }
+    })
+}
+
+showCurrentSlide(idCount);
+
+// hide all Slides
+function hideAllSlides() {
+    reviewSlide.forEach(item => item.classList.remove('activeSlide'));
+}
+
+prevBtn.addEventListener('click', function() {
+    idCount--;
+    if (idCount < 0) {
+        idCount = reviewSlide.length - 1;
+    }
+    showCurrentSlide(idCount);
+});
+
+nextBtn.addEventListener('click', function() {
+    idCount++;
+    if (idCount == reviewSlide.length) {
+        idCount = 0;
+    }
+    showCurrentSlide(idCount);
 })

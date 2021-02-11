@@ -1,0 +1,41 @@
+.reviews {
+    padding: 5rem 0;
+    .reviews-wrapper {
+        position: relative;
+        height: 40rem;
+    }
+    // single item
+    &__item {
+        text-align: center;
+        padding: 3rem;
+        display: none;
+        // title
+        &__title {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        //  text
+        .text {
+            font-size: 1.6rem;
+            color: $emperor-color;
+            margin: 2rem 0;
+            padding: 0 2.5rem;
+            //  responsive
+            @include media-medium-1 {
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        // name
+        &__name {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 0.4rem;
+        }
+    }
+    .activeSlide {
+        display: block;
+    }
+}

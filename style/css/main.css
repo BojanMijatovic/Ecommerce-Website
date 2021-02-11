@@ -326,6 +326,75 @@ button {
         background-color: #ffffff;
         color: #534a4b; }
 
+.reviews {
+  padding: 5rem 0; }
+  .reviews .reviews-wrapper {
+    position: relative;
+    height: 40rem; }
+  .reviews__item {
+    text-align: center;
+    padding: 3rem;
+    display: none; }
+    .reviews__item__title {
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      font-weight: 500; }
+    .reviews__item .text {
+      font-size: 1.6rem;
+      color: #534a4b;
+      margin: 2rem 0;
+      padding: 0 2.5rem; }
+      @media only screen and (min-width: 768px) {
+        .reviews__item .text {
+          width: 60%;
+          margin-left: auto;
+          margin-right: auto; } }
+    .reviews__item__name {
+      font-size: 1.8rem;
+      font-weight: 300;
+      letter-spacing: 0.4rem; }
+  .reviews .activeSlide {
+    display: block; }
+
+.newsletter {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../images/background-img-2.png") center/cover no-repeat fixed;
+  text-align: center;
+  padding: 5rem 0; }
+  .newsletter__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 2.2rem; }
+  .newsletter__form-control {
+    font-size: 1.6rem;
+    background: transparent;
+    padding: 0.8rem 1rem;
+    border: 1.5px solid #cc876e;
+    color: #cc876e;
+    font-weight: 300;
+    width: 80%;
+    margin: 1.6rem 0; }
+    @media only screen and (min-width: 768px) {
+      .newsletter__form-control {
+        width: 40rem; } }
+    .newsletter__form-control::placeholder {
+      color: #cc876e; }
+    .newsletter__form-control:focus {
+      outline: none; }
+  .newsletter .button__trans {
+    width: 80%;
+    margin: 1.6rem 0;
+    background: #cc876e;
+    border-color: #534a4b;
+    font-size: 1.6rem; }
+    .newsletter .button__trans:hover {
+      background: #ffffff;
+      color: #534a4b; }
+    @media only screen and (min-width: 768px) {
+      .newsletter .button__trans {
+        width: auto; } }
+
 .container {
   width: 90vw;
   margin: 0 auto; }
@@ -374,3 +443,23 @@ button {
     transition: all 0.5s ease-in-out; }
     .button__product-add:hover {
       background-color: #000000; }
+.button__reviews-prev, .button__reviews-next {
+  position: absolute;
+  font-size: 1.8rem;
+  width: 4rem;
+  border-radius: 50%;
+  height: 4rem;
+  border: none;
+  background-color: #cc876e;
+  color: #ffffff;
+  transition: all 0.5s ease-in-out; }
+  .button__reviews-prev:hover, .button__reviews-next:hover {
+    opacity: 0.8; }
+.button__reviews-prev {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+.button__reviews-next {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); }

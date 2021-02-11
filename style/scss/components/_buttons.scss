@@ -46,4 +46,30 @@
             }
         }
     }
+    // reviews
+    &__reviews-prev,
+    &__reviews-next {
+        position: absolute;
+        font-size: 1.8rem;
+        width: 4rem;
+        border-radius: 50%;
+        height: 4rem;
+        border: none;
+        background-color: $brown-color;
+        color: $white-color;
+        transition: $transition;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__reviews-prev {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__reviews-next {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

@@ -1,0 +1,49 @@
+.newsletter {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/background-img-2.png') center/cover no-repeat fixed;
+    text-align: center;
+    padding: 5rem 0;
+    //  title
+    &__title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $white-color;
+        margin-bottom: 2.2rem;
+    }
+    // form control
+    &__form-control {
+        font-size: 1.6rem;
+        background: transparent;
+        padding: 0.8rem 1rem;
+        border: 1.5px solid $brown-color;
+        color: $brown-color;
+        font-weight: 300;
+        width: 80%;
+        margin: 1.6rem 0;
+        // responsive
+        @include media-medium-1 {
+            width: 40rem;
+        }
+        &::placeholder {
+            color: $brown-color;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .button__trans {
+        width: 80%;
+        margin: 1.6rem 0;
+        background: $brown-color;
+        border-color: $emperor-color;
+        font-size: 1.6rem;
+        &:hover {
+            background: $white-color;
+            color: $emperor-color;
+        }
+        // responsive
+        @include media-medium-1 {
+            width: auto;
+        }
+    }
+}
