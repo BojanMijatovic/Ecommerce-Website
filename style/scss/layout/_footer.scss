@@ -1,0 +1,43 @@
+.footer {
+    background: $black-color;
+    text-align: center;
+    .footer-wrapper {
+        padding: 5rem 0;
+        text-align: center;
+        // responsive
+        @include media-medium-1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        // group
+        .footer__group {
+            margin: 3rem 0;
+            // responsive
+            @include media-medium-1 {
+                margin: 0;
+            }
+            &__links {
+                margin: 1rem 0;
+                .footer__group__link a {
+                    text-transform: uppercase;
+                    font-weight: 200;
+                    color: $white-color;
+                    opacity: 0.9;
+                    transition: $transition;
+                    font-size: 1.5rem;
+                    margin: 0.5rem 0;
+                    &:hover {
+                        color: $brown-color;
+                    }
+                }
+            }
+        }
+    }
+    // text
+    .footer__text {
+        padding-bottom: 1rem;
+        .text {
+            font-size: 1.4rem;
+        }
+    }
+}

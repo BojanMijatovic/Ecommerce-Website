@@ -13,6 +13,14 @@ toggleBtn.addEventListener('click', function() {
     }
 })
 
+const links = document.querySelectorAll('.__link');
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.style.overflow = 'visible';
+        navDiv.classList.remove('showNav');
+        toggleBtn.firstElementChild.className = 'fas fa-bars fa-fw';
+    })
+})
 
 
 // resize animation stopper

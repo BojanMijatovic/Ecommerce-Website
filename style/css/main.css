@@ -84,7 +84,7 @@ button {
           background: transparent;
           flex: 0 0 40%; } }
       .header .navbar__collapse .__nav {
-        margin-top: 10rem !important;
+        margin-top: 20rem !important;
         width: 90vw;
         margin: 0 auto; }
         @media only screen and (min-width: 992px) {
@@ -246,6 +246,9 @@ button {
       text-transform: capitalize;
       margin: 0.8rem 0;
       font-weight: 300; }
+      @media only screen and (min-width: 1200px) {
+        .features .features-wrapper .feature__item__title {
+          font-size: 2rem; } }
 
 .product {
   padding: 5rem 0; }
@@ -319,7 +322,8 @@ button {
     .order .order-wrapper .order__content__title {
       text-transform: capitalize;
       font-size: 3rem;
-      line-height: 1.3; }
+      line-height: 1.3;
+      color: #ffffff; }
     .order .order-wrapper .order__content .button__trans {
       margin-top: 1.5rem; }
       .order .order-wrapper .order__content .button__trans:hover {
@@ -349,10 +353,16 @@ button {
           width: 60%;
           margin-left: auto;
           margin-right: auto; } }
+      @media only screen and (min-width: 992px) {
+        .reviews__item .text {
+          font-size: 2rem; } }
     .reviews__item__name {
       font-size: 1.8rem;
       font-weight: 300;
       letter-spacing: 0.4rem; }
+      @media only screen and (min-width: 992px) {
+        .reviews__item__name {
+          font-size: 2.4rem; } }
   .reviews .activeSlide {
     display: block; }
 
@@ -366,6 +376,9 @@ button {
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 2.2rem; }
+    @media only screen and (min-width: 768px) {
+      .newsletter__title {
+        font-size: 2.8rem; } }
   .newsletter__form-control {
     font-size: 1.6rem;
     background: transparent;
@@ -394,6 +407,38 @@ button {
     @media only screen and (min-width: 768px) {
       .newsletter .button__trans {
         width: auto; } }
+
+.footer {
+  background: #000000;
+  text-align: center; }
+  .footer .footer-wrapper {
+    padding: 5rem 0;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .footer .footer-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); } }
+    .footer .footer-wrapper .footer__group {
+      margin: 3rem 0; }
+      @media only screen and (min-width: 768px) {
+        .footer .footer-wrapper .footer__group {
+          margin: 0; } }
+      .footer .footer-wrapper .footer__group__links {
+        margin: 1rem 0; }
+        .footer .footer-wrapper .footer__group__links .footer__group__link a {
+          text-transform: uppercase;
+          font-weight: 200;
+          color: #ffffff;
+          opacity: 0.9;
+          transition: all 0.5s ease-in-out;
+          font-size: 1.5rem;
+          margin: 0.5rem 0; }
+          .footer .footer-wrapper .footer__group__links .footer__group__link a:hover {
+            color: #cc876e; }
+  .footer .footer__text {
+    padding-bottom: 1rem; }
+    .footer .footer__text .text {
+      font-size: 1.4rem; }
 
 .container {
   width: 90vw;
