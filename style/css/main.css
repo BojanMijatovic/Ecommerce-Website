@@ -245,7 +245,8 @@ button {
       color: #ffffff;
       text-transform: capitalize;
       margin: 0.8rem 0;
-      font-weight: 300; }
+      font-weight: 300;
+      font-size: 1.8rem; }
       @media only screen and (min-width: 1200px) {
         .features .features-wrapper .feature__item__title {
           font-size: 2rem; } }
@@ -272,7 +273,7 @@ button {
     .product .product-wrapper .product__item-wrapper .product__item:hover {
       background: #f1f1f1; }
     .product .product-wrapper .product__item-wrapper .product__item:first-of-type {
-      margin-top: 2rem; }
+      margin: 2rem 0; }
     .product .product-wrapper .product__item-wrapper .product__item:last-of-type {
       margin-bottom: 2rem; }
       @media only screen and (min-width: 768px) {
